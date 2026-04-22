@@ -1,0 +1,34 @@
+# EditorConfig — https://editorconfig.org
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.{ts,tsx,js,jsx,json,css,html,md,yaml,yml}]
+indent_size = 2
+
+[*.cs]
+indent_size = 4
+
+# C# file-scoped namespaces
+csharp_style_namespace_declarations = file_scoped:suggestion
+
+# C# primary constructors
+csharp_style_prefer_primary_constructors = true:suggestion
+
+# Organize usings
+dotnet_sort_system_directives_first = true
+
+# Nullable reference types
+dotnet_style_null_propagation = true:suggestion
+
+[*.{csproj,slnx,props,targets}]
+indent_size = 2
+
+[Makefile]
+indent_style = tab
